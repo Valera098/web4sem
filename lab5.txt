@@ -1,0 +1,156 @@
+Сайт: https://docs.github.com/en/graphql/overview/explorer
+Запрос:
+
+{
+  viewer {
+    login
+    name
+    email
+    url
+    repositories(first:100, affiliations:[OWNER]) {
+      nodes {
+        name
+        owner {
+          login
+        }
+        createdAt
+        description
+        url
+      }
+    }
+  }
+}
+
+Ответ:
+
+{
+  "data": {
+    "viewer": {
+      "login": "Valera098",
+      "name": "Valeriy",
+      "email": "",
+      "url": "https://github.com/Valera098",
+      "repositories": {
+        "nodes": [
+          {
+            "name": "vue-kanban-board",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2020-07-12T08:32:13Z",
+            "description": null,
+            "url": "https://github.com/Valera098/vue-kanban-board"
+          },
+          {
+            "name": "Web",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-11T06:41:07Z",
+            "description": null,
+            "url": "https://github.com/Valera098/Web"
+          },
+          {
+            "name": "project12",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-30T22:34:24Z",
+            "description": null,
+            "url": "https://github.com/Valera098/project12"
+          },
+          {
+            "name": "project13",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-30T22:58:39Z",
+            "description": null,
+            "url": "https://github.com/Valera098/project13"
+          },
+          {
+            "name": "project14",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-31T04:11:04Z",
+            "description": null,
+            "url": "https://github.com/Valera098/project14"
+          },
+          {
+            "name": "project15",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-31T04:53:41Z",
+            "description": null,
+            "url": "https://github.com/Valera098/project15"
+          },
+          {
+            "name": "project11",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-31T05:34:51Z",
+            "description": null,
+            "url": "https://github.com/Valera098/project11"
+          },
+          {
+            "name": "project16",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-31T06:12:23Z",
+            "description": null,
+            "url": "https://github.com/Valera098/project16"
+          },
+          {
+            "name": "chivilev1216",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-03-31T09:27:25Z",
+            "description": null,
+            "url": "https://github.com/Valera098/chivilev1216"
+          },
+          {
+            "name": "phpexam",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-04-01T09:50:36Z",
+            "description": null,
+            "url": "https://github.com/Valera098/phpexam"
+          },
+          {
+            "name": "django-rest-project",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-04-12T01:23:30Z",
+            "description": null,
+            "url": "https://github.com/Valera098/django-rest-project"
+          },
+          {
+            "name": "manual",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-04-13T18:26:09Z",
+            "description": "Инструкция для ПД ",
+            "url": "https://github.com/Valera098/manual"
+          },
+          {
+            "name": "engineer-project",
+            "owner": {
+              "login": "Valera098"
+            },
+            "createdAt": "2021-06-12T10:57:01Z",
+            "description": null,
+            "url": "https://github.com/Valera098/engineer-project"
+          }
+        ]
+      }
+    }
+  }
+}
