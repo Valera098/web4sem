@@ -1,0 +1,26 @@
+use("db");
+
+// db.createCollection("workers")
+// db.createCollection("addresses")
+
+// db.workers.insertMany([
+//     {"address":"raskolnikova", "number":5},
+//     {"address":"chulman", "number":7},
+//     {"address":"prospectmira", "number":10}
+// ]);
+
+// db.workers.update(
+//     {"address":"chulman"}, 
+//     {$set:{"address":"vahitova"}}
+// );
+
+// db.workers.find(
+//     {"address":"raskolnikova"}
+// )
+
+db.workers.deleteOne(
+    {"address":"vahitova"}
+)
+
+// db.workers.drop()
+// db.addresses.drop()
